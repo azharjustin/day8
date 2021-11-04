@@ -1,0 +1,80 @@
+2.Convert the UML diagram to Typescript class. - use number for double
+
+
+const pi=3.1412;
+
+
+class circle{
+
+    constructor(radius,color){
+
+        this.radius=radius;
+
+        this.color=color;
+
+        
+    }
+    
+getRadius(){
+
+        return this.radius;
+
+    }
+    
+getColor(){
+
+        return this.color;
+
+    }
+    
+getArea(){
+
+        return pi*this.radius*this.radius;
+
+    }
+
+    getCircumference(){
+
+        return 2*pi*this.radius;
+
+    }
+
+ 
+   
+}
+   
+let c1=new circle(1.0,"red");
+
+let Radius=c1.getRadius();
+
+let Color=c1.getColor();
+
+let area=c1.getArea();
+
+let circumference=c1.getCircumference();
+
+console.log(Radius);
+
+console.log(Color);
+
+console.log(area);
+
+console.log(circumference);
+
+
+3.Write a “person” class to hold all the details.
+
+ class person{
+       constructor(name,age,sex,phoneno,qualification){
+         this.name=name;
+         this.age=age;
+         this.sex=sex;
+         this.phoneno;
+         this.qualification;
+     }
+ }
+let details=new person("vijay",23,"male",8768484751,"MCA");
+console.log(details);
+
+
+    
